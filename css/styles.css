@@ -1,4 +1,29 @@
+/* FOOLE FONTS  */
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.woff2") format("woff2"),
+      url("Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.woff2") format("woff2"),
+      url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /* GLOBAL */
+:root{
+  --font-family:"Roboto", "Arial", sans-serif;
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -17,11 +42,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--font-family);
+  font-size: 18px;
+  line-height: 28px;
   background-color: #fff;
-  color: #222;
+  color: #333;
 }
 
 img {
@@ -33,9 +58,9 @@ img {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1400px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,4 +69,189 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* SITE-HEADER */
+
+.site-header {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #f3d7b7;
+}
+
+.site-header-container{
+  display: flex;
+  align-items: center;
+}
+
+.site-header-logo{
+  margin-right: auto;
+}
+.site-header-items {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.site-header-item {
+}
+
+.site-header-item:not(:last-child){
+  margin-right: 40px;
+}
+
+.site-header-link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #333;
+}
+
+.site-header-text {
+  background-image: url(../img/coffee.jpg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 710px;
+}
+/* .site-header-text-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-img {
+  display: block;
+} */
+
+.header-text-container{
+  width: 474px;
+}
+.header-heading {
+  margin-top: 125px;
+  font-size: 64px;
+  line-height: 75px;
+  margin-bottom: 24px;
+}
+.header-text {
+  margin-bottom: 34px;
+}
+.header-button {
+  display: inline-block;
+  margin-bottom: 250px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0a775f;
+  padding: 16px 24px;
+  letter-spacing: 1px;
+  border-radius: 100px;
+}
+
+
+
+/* HERO */
+
+.site-hero {
+}
+
+.site-hero-top {
+  background-image: url(../img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.site-hero-top-items {
+  display: flex;
+  flex-direction: column;
+}
+.hero-top-heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #000;
+}
+.hero-top-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-top-item:nth-child(even){
+  flex-direction: row-reverse;
+}
+.hero-tp-img {
+  width: 450px;
+  height: 375px;
+}
+.hero-top-item-sourse {
+  display: flex;
+  flex-direction: column;
+}
+.top-sourse-heading {
+  margin: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+}
+.top-sourse-text {
+  width: 410px;
+}
+
+
+/* SITE-HERO-MIDDLE */
+
+.site-hero-middle {
+  background-image: url(../img/middle-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  padding-top: 50px;
+}
+.hero-middle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.middle-heading {
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+}
+.middle-text {
+  width: 580px;
+  margin-bottom: 80px;
+}
+.middle-services {
+  display: flex;
+  align-items: center;
+}
+
+.services-items{
+  width: 433px;
+}
+.services-items:not(:last-child) {
+  margin-right: 20px;
+}
+.service-img {
+  width: 433px;
+  height: 500px;
+}
+.services-heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+.services-text {
 }
