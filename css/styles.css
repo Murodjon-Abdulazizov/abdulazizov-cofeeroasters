@@ -1,8 +1,9 @@
+
 /* FOOLE FONTS  */
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Bold.woff2") format("woff2"),
-      url("Roboto-Bold.woff") format("woff");
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"),
+      url("../fonts/Roboto-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -10,8 +11,8 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("Roboto-Medium.woff2") format("woff2"),
-      url("Roboto-Medium.woff") format("woff");
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"),
+      url("../fonts/Roboto-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -45,6 +46,7 @@ body {
   font-family: var(--font-family);
   font-size: 18px;
   line-height: 28px;
+  font-weight: 400;
   background-color: #fff;
   color: #333;
 }
@@ -87,14 +89,15 @@ img {
 .site-header-logo{
   margin-right: auto;
 }
+
 .site-header-items {
   display: flex;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-.site-header-item {
-}
+
+
 
 .site-header-item:not(:last-child){
   margin-right: 40px;
@@ -107,6 +110,7 @@ img {
   font-weight: 700;
   letter-spacing: 1px;
   color: #333;
+  text-transform: uppercase;
 }
 
 .site-header-text {
@@ -115,11 +119,13 @@ img {
   background-position: right bottom;
   background-size: 710px;
 }
+
 /* .site-header-text-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .header-img {
   display: block;
 } */
@@ -127,15 +133,18 @@ img {
 .header-text-container{
   width: 474px;
 }
+
 .header-heading {
   margin-top: 125px;
   font-size: 64px;
   line-height: 75px;
   margin-bottom: 24px;
 }
+
 .header-text {
   margin-bottom: 34px;
 }
+
 .header-button {
   display: inline-block;
   margin-bottom: 250px;
@@ -152,8 +161,6 @@ img {
 
 /* HERO */
 
-.site-hero {
-}
 
 .site-hero-top {
   background-image: url(../img/hero-bg.jpg);
@@ -161,10 +168,12 @@ img {
   background-size: cover;
   background-position: center;
 }
+
 .site-hero-top-items {
   display: flex;
   flex-direction: column;
 }
+
 .hero-top-heading {
   text-transform: uppercase;
   text-align: center;
@@ -175,6 +184,7 @@ img {
   line-height: 59px;
   color: #000;
 }
+
 .hero-top-item {
   display: flex;
   justify-content: space-around;
@@ -184,14 +194,17 @@ img {
 .hero-top-item:nth-child(even){
   flex-direction: row-reverse;
 }
+
 .hero-tp-img {
   width: 450px;
   height: 375px;
 }
+
 .hero-top-item-sourse {
   display: flex;
   flex-direction: column;
 }
+
 .top-sourse-heading {
   margin: 0;
   margin-bottom: 10px;
@@ -200,6 +213,7 @@ img {
   font-size: 48px;
   line-height: 56px;
 }
+
 .top-sourse-text {
   width: 410px;
 }
@@ -214,6 +228,7 @@ img {
   background-size: contain;
   padding-top: 50px;
 }
+
 .hero-middle-text {
   display: flex;
   flex-direction: column;
@@ -221,15 +236,21 @@ img {
   text-align: center;
   color: #fff;
 }
+
 .middle-heading {
+  text-transform: uppercase;
   font-size: 50px;
   line-height: 59px;
   font-weight: 700;
 }
+
 .middle-text {
   width: 580px;
   margin-bottom: 80px;
+  font-size: 16px;
+  line-height: 28px;
 }
+
 .middle-services {
   display: flex;
   align-items: center;
@@ -238,13 +259,16 @@ img {
 .services-items{
   width: 433px;
 }
+
 .services-items:not(:last-child) {
   margin-right: 20px;
 }
+
 .service-img {
   width: 433px;
   height: 500px;
 }
+
 .services-heading {
   text-transform: uppercase;
   font-weight: 500;
@@ -253,5 +277,155 @@ img {
   margin-top: 28px;
   margin-bottom: 10px;
 }
-.services-text {
+
+
+
+/* HERO-BOTTOM */
+
+.site-hero-bottom {
+  background-image: url(../img/bgimg-hero-bottom.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.hero-bottom-basket {
+  padding: 50px 30px;
+}
+.hero-bottom-heading {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 160px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+}
+
+.hero-bottom-services {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.bottom-service {
+  background-color: #f8f8f2;
+  padding: 20px 20px 40px 20px;
+}
+
+.bottom-service:not(:last-child){
+  margin-right: 20px;
+}
+
+
+/* .bottom-service::before{
+  display: inline-block;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: #f8f8f2;
+  border: 4px solid #c99b67;
+} */
+
+.bottom-service-number{
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: right;
+  color: #333;
+}
+
+.bottom-service-heading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #333;
+}
+
+.bottom-text-service {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.hero-bottom-button {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-link {
+  display: block;
+  padding: 16px 24px;
+  border-radius: 100px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
+  max-width: 193px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #c99b67;
+  color: #fff;
+}
+
+
+/* FOOTER */
+
+.site-footer {
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+
+.site-footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer-logo-img {
+  display: flex;
+}
+
+.site-footer-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-footer-item:not(:last-child) {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.footer-link{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.site-footer-socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.site-footer-social:not(:last-child) {
+  margin-right: 30px;
 }
